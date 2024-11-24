@@ -9,7 +9,7 @@
 <body class="bg-blue-400 text-white font-hanken-grotesk pb-20">
 <div class="px-10">
     <nav class="flex justify-between items-center py-4 border-b
-    border-white/10">
+    border-white/30">
         <div>
             <a href="/">
                 <img src="{{ Vite::asset('resources/images/logo.png') }}"
@@ -20,7 +20,7 @@
         <div class="space-x-6 font-bold">
             <a href="/">Главная</a>
             <a href="/products">Разработки</a>
-            <a href="#">Услуги</a>
+            <a href="/services">Услуги</a>
             <a href="#">Проекты</a>
             <a href="#">Контакты</a>
             <a href="#">О нас</a>

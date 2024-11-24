@@ -9,3 +9,7 @@ Route::get('/', function () {
 Route::get('/products', function () {
     return view('components.products');
 });
+
+Route::get('/services', function () {
+    return view('components.services');
+});
