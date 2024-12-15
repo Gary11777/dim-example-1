@@ -22,7 +22,6 @@ class JobController extends Controller
     public function create()
     {
         return view('jobs.create');
-
     }
 
     /**
@@ -30,7 +29,20 @@ class JobController extends Controller
      */
     public function store(StoreJobRequest $request)
     {
-        //
+        // Validate and get data from the reguest
+        $attributes = $request->validate([
+            'title' => ['required|string|max:255'],
+            'salary' => ['required|string|max:255']
+        ]);
+
+        // Save data to the jobs table
+        Job::create($attributes);
+
+        // Redirect or return a response
+        return redirect('/')->with(
+            'success', 'Job created successfully!'
+        );
+
     }
 
     /**
