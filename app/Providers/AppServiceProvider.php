@@ -2,8 +2,6 @@
 
 namespace App\Providers;
 
-use App\Models\Job;
-use App\Policies\JobPolicy;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
