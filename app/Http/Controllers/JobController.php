@@ -39,9 +39,7 @@ class JobController extends Controller
         Job::create($attributes);
 
         // Redirect or return a response
-        return redirect('/')->with(
-            'success', 'Job created successfully!'
-        );
+        return redirect('/');
 
     }
 
